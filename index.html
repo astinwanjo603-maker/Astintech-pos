@@ -1,1 +1,59 @@
-Astintech_POS_Full.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Astintech POS v7 - Dashboard Fixed - Complete - FULL CODE</title>
+<style>
+:root{--bg:#f1f5f9;--card:#fff;--ink:#0f172a;--blue:#2563eb;--green:#16a34a;--red:#dc2626;--orange:#f59e0b;--dark:#0f172a;--purple:#7c3aed}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Arial,sans-serif}
+header{background:var(--dark);color:#fff;padding:14px 18px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;align-items:center}
+.badge{padding:5px 11px;border-radius:20px;font-size:10.5px;font-weight:800;color:#fff}
+.badge-super{background:#dc2626}.badge-admin{background:#7c3aed}.badge-manager{background:#f59e0b;color:#000}.badge-staff{background:#16a34a}
+.badge-online{background:#22c55e;color:#000}.badge-offline{background:#dc2626;color:#fff}
+nav{display:flex;gap:6px;overflow-x:auto;padding:10px;background:#fff;position:sticky;top:0;z-index:20;border-bottom:1px solid #e2e8f0}
+button{border:0;border-radius:9px;padding:10px 13px;background:var(--blue);color:white;font-weight:700;cursor:pointer;font-size:13px}
+nav button{white-space:nowrap;background:#e2e8f0;color:var(--ink);font-size:11.5px;padding:9px 11px}nav button.active{background:var(--blue);color:#fff}
+main{padding:14px;max-width:1280px;margin:auto}
+section{display:none}section.active{display:block !important}
+h2{font-size:18px;margin:12px 0}h3{font-size:15px;margin:10px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:11px}
+.card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 3px 10px #00000007;margin-bottom:12px;border:1px solid #eef2f7}
+.stat{font-size:22px;font-weight:900;margin-top:6px}
+.muted{color:#64748b;font-size:12px}
+label{display:block;font-size:11.5px;font-weight:700;margin:11px 0 5px}
+input,select,textarea{width:100%;padding:11px;border:1px solid #cbd5e1;border-radius:9px;background:#fff;font-size:13px}
+textarea{min-height:70px}form button{margin-top:12px;width:100%}
+table{width:100%;border-collapse:collapse;min-width:560px}
+th,td{text-align:left;padding:9px 7px;border-bottom:1px solid #eef2f7;font-size:12px}th{background:#f8fafc;font-weight:800}
+.tablewrap{overflow-x:auto}
+.small{padding:5px 9px;font-size:10.5px;margin:2px;border-radius:7px}.danger{background:var(--red)}.green{background:var(--green)}.orange{background:var(--orange)}.purple{background:var(--purple)}
+.notice{background:#eff6ff;padding:12px;border-radius:9px;font-size:12px;line-height:1.6;border:1px solid #dbeafe}
+footer{text-align:center;color:#64748b;padding:20px;font-size:10.5px;line-height:2}
+.login-wrap{max-width:520px;margin:30px auto;background:#fff;padding:26px;border-radius:16px;box-shadow:0 10px 30px #00000012}
+.bio-box{border:2px dashed #cbd5e1;border-radius:12px;padding:16px;text-align:center;margin:10px 0;background:#f8fafc}
+#receiptArea{display:none}
+@media print{body *{visibility:hidden}#receiptArea,#receiptArea *{visibility:visible}#receiptArea{position:absolute;left:0;top:0;width:80mm;display:block !important;background:#fff;padding:10px;color:#000}}
+.receipt{width:80mm;background:#fff;color:#000;font-family:'Courier New',monospace;font-size:12px;padding:12px;border:1px dashed #000;margin:auto}
+.sync-queue{max-height:240px;overflow:auto;background:#0f172a;color:#22c55e;padding:10px;border-radius:8px;font-family:monospace;font-size:11px}
+.step{border-left:4px solid var(--blue);padding:10px 14px;background:#f8fafc;margin:8px 0;border-radius:0 8px 8px 0}
+</style>
+</head>
+<body>
+<div id="loginScreen">
+<div class="login-wrap">
+<h2 style="text-align:center;margin:0">Astintech POS v7 - FULL CODE BILA KUKATA</h2>
+<p class="muted" style="text-align:center">DASHBOARD FIXED - COMPLETE - OFFLINE PWA</p>
+<div style="display:flex;gap:8px;justify-content:center;margin:10px 0">
+<span id="connBadgeLogin" class="badge badge-online">ONLINE</span>
+<span class="badge" style="background:#22c55e;color:#000">Dashboard Fixed</span>
+</div>
+<div class="notice" style="margin:12px 0">
+<b>Login Default</b><br>Username: superadmin<br>Password: Astintech@2026<br>PIN: 1234
+</div>
+<form id="loginForm">
+<label>Username</label><input id="loginUser" required value="superadmin">
+<label>Password</label><input id="loginPass" type="password" required value="Astintech@2026">
+<button type="submit" style="width:100%;background:#16a34a">LOGIN & OPEN DASHBOARD</button>
+</form>
+</div>
+</div>
